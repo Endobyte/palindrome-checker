@@ -1,0 +1,20 @@
+extends layout
+
+block content
+  h1 Palindrome Checker
+  form(method="POST" action="/")
+    label(for="userText") Enter your text here:
+    br
+    input(type="text" id="userText" name="userText" value=`${phrase}`)
+    br
+    br
+    button(type="submit") Submit
+  if message
+    p=`Reversed: ${message2} (${message3})`
+    p=message
+  br
+  br
+  h2 Palindrome Examples
+  p race car
+  p noon
+  p madam
